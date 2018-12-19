@@ -1,0 +1,10 @@
+  <button type="button" name="button" (click)="next()">Carte suivante</button><br>
+<div class="card" style="width: 18rem;">
+  <div *ngIf="cards.length!=0">
+    <img class="card-img-top" src="{{cards[cardIndex].image}}">
+    <div class="card-body">
+      <h5 class="card-title">{{cards[cardIndex].title}}</h5>
+      <p class="card-text">{{cards[cardIndex].body}}</p>
+    </div>
+  </div>
+</div>
